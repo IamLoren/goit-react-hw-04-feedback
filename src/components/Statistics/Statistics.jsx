@@ -1,9 +1,7 @@
-import React from 'react';
 import s from './Statistics.module.css';
 
-export class Statistics extends React.Component {
-  render() {
-    const { good, neutral, bad, total, positivePercentage } = this.props;
+export const Statistics = ({ good, neutral, bad, total, positivePercentage }) => {
+
     return (
       <div className={s.statWrap}>
         <p className={s.statField}>Good: {good}</p>
@@ -19,5 +17,4 @@ export class Statistics extends React.Component {
         </p>
    </div>
     );
-  }
 }

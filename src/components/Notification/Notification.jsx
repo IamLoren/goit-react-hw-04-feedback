@@ -1,10 +1,8 @@
-import React from 'react';
 import s from './Notification.module.css'
 
-export class Notification extends React.Component {
-    render() {
-       const {message} = this.props;
+export const Notification = ({message}) => {
+
         return (
-        <p className={s.notification}>{message}</p>)
-    }
+        <p className={s.notification}>{message}</p>
+        )
 }

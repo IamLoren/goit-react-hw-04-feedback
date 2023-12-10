@@ -1,12 +1,9 @@
-import React from 'react';
 import s from './FeedbackOptions.module.css'
 import { FaRegSmile } from "react-icons/fa";
 import { CgSmileNeutral } from "react-icons/cg";
 import { PiSmileySadBold } from "react-icons/pi";
 
-export class FeedbackOptions extends React.Component {
-  render() {
-    const { addFeedback } = this.props;
+export const FeedbackOptions = ({ addFeedback }) => {
 
     return (
       <>
@@ -37,5 +34,4 @@ export class FeedbackOptions extends React.Component {
         </div>
       </>
     );
-  }
 }
